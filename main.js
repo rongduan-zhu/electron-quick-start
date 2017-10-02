@@ -21,6 +21,8 @@ function createWindow () {
 
   modalWindow.on('close', () => console.log('close is called!'))
 
+  setTimeout(() => modalWindow.close(), 3000)
+
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
